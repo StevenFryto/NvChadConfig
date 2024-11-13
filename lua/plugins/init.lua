@@ -14,6 +14,10 @@ return {
   },
 
   {
+    "williamboman/mason.nvim"
+  },
+
+  {
   	"nvim-treesitter/nvim-treesitter",
     lazy = false,
   	opts = {
@@ -27,5 +31,21 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     lazy = false,
-  }
+  },
+
+  {
+    "nvim-tree/nvim-web-devicons",
+    lazy = false,
+  },
+
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5',
+    lazy = false,
+    ["rust-analyzer"] = {
+      cargo = {
+        allFeatures = true,
+      },
+    },
+  },
 }
